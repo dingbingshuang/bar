@@ -65,6 +65,7 @@ ul,li{
 }
 /*个人中心*/
 .esc1{
+	overflow: hidden;
 	float: right;
 	margin-right: 7%;
 	margin-top: 3%;
@@ -130,7 +131,7 @@ ul,li{
 }
 .centre-2{
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 65%;
 }
 .centre-2 div{
@@ -253,4 +254,24 @@ right: -1%;
 	margin: 0px auto;
 	padding-bottom: 10px;
    border-bottom: 1px solid #fff;
+}
+/*详细信息*/
+.in-top img{
+	width: 220px;
+	height: 220px;
+	border-radius: 200px;
+	border: 8px solid #fff;
+	float: left;
+}
+.in-top {
+	margin-left: 50px;
+}
+.in-user{
+	margin-left: 20px;
+	text-align: center;
+	float: left;
+	font-size: 36px;
+	color: black;
+}
+.in-user p{
 }
