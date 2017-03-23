@@ -6,7 +6,9 @@
  */
 
     	$(document).ready(function(){
-                 $(".content").height($(window).height());
+    		var $he=$(window).height() ;
+    		console.log($he);
+                 $(".content").height($he);
                   $(".content").width($(window).width());
                   
 });

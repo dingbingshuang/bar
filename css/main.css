@@ -6,11 +6,11 @@
  * @version $Id$
  */
 *{margin:0; padding:0; list-style:none; }
-body{ background:#fff;  font-family: "Microsoft YaHei"; font-size: 16px; height: 100%; overflow: hidden; }
+body{ background:#fff;  font-family: "Microsoft YaHei"; font-size: 16px; height: 100%;  }
 img{ border:0;  }
 a{ text-decoration:none; color:#333;  }
 ul,li{
-
+   list-style: none;
 }
 /*登录页面*/
 
@@ -95,7 +95,7 @@ ul,li{
 }
 .centre{
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 51%;
 }
 .centre .hy{
@@ -149,14 +149,15 @@ ul,li{
 	font-size: 38px;
 }
 .nav{
-    width: 100%;
-	position: fixed;
-	bottom: 3%;
-	left: 4%;
+    width: 96%;
+	position: absolute;
+	bottom: 0%;
+	left: 3%;
 }
 .nav div{
-	width: 18%;
+   width: 18%;
   float: left;
+  margin-left: 1%;
   text-align: center;
 }
 .nav div a{
@@ -264,6 +265,7 @@ right: -1%;
 	float: left;
 }
 .in-top {
+	overflow: hidden;
 	margin-left: 50px;
 }
 .in-user{
@@ -273,5 +275,114 @@ right: -1%;
 	font-size: 36px;
 	color: black;
 }
-.in-user p{
+
+.in-top .in{
+	background-image: url(../img/009.png);
+	background-size: 100% 100%;
+}
+.in-top .in{
+	font-size: 36px;
+	width:365px;
+	height: 110px;
+	line-height: 95px;
+	text-indent: 2em;
+	color: #415569;
+	font-weight: bold;
+	float: left;
+	position:absolute; 
+	top: 13%;
+	left: 23%;
+}
+.in-center{
+	overflow: hidden;
+	width: 90%;
+	border-top:4px dashed #fff;
+	border-bottom:4px dashed #fff; 
+	position: absolute;
+	top: 25%;
+	left: 5%;
+
+	padding: 20px 0px;
+}
+
+.in-center img{
+width: 100px;
+height: 100px;
+float: left;
+}
+.in-center span{
+margin-left: 40px;
+line-height: 100px;
+font-size: 36px;
+color: #fff;
+float: left;
+}
+.center-title{
+	width: 80%;
+	margin: 0px auto;
+}
+.in-main{
+	width: 90%;
+	background-color:#4d4d4d;
+	overflow: hidden;
+	margin: 0px auto;
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
+.in-main ul li span:first-child img{
+	margin-top: 14px;
+	width: 60px;
+	height: 55px;
+}
+.in-main ul li span:last-child img{
+
+	margin-top: 30px;
+	width: 30px;
+	height: 30px;
+}
+.in-main ul li span{
+	padding: 5px 20px;
+	font-size: 30px;
+	color: #fff;
+}
+.in-main ul li:nth-child(odd) {
+    overflow: hidden;
+   margin-top: 10px;
+   background-color: #5e5e5e;
+   border-radius: 20px;
+}
+.in-main ul li:nth-child(even) {
+    overflow: hidden;
+   margin-top: 10px;
+   background-color: #707070;
+   border-radius: 20px;
+}
+/*赠送页面*/
+.give-main{
+	width: 90%;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+
+}
+.give-main p{
+	text-indent: 3em;
+	color: #fff;
+	font-size: 42px;
+	margin-top: 80px;
+}
+.give-main p span{
+	color: #fff;
+	font-size: 34px;background-color: #5c5a5a;
+	padding: 10px 30px 13px 30px ;
+}
+.give-main p input{
+	padding: 0px;
+	line-height: 45px;
+	margin-left: 20px;
+	border: 0px;
+	color: #fff;
+	font-size: 34px;background-color: #5c5a5a;
+	padding: 10px 30px ;
 }
