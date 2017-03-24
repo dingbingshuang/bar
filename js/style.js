@@ -8,11 +8,17 @@
     	$(document).ready(function(){
     		var $he=$(window).height() ;
     		console.log($he);
-                 $(".content").height($he);
+                 $(".slideBox").height($he/2);
+                  $(".idnex-main").height($he/2);
+                  $(".slideBox .bd img").height($he/2);
+                    $(".content").height($he);
                   $(".content").width($(window).width());
                   
 });
     	$(window).resize(function(){
+                  $(".idnex-main").height($he/2);
+    		   $(".slideBox").height($he/2);
+                  $(".slideBox .bd img").height($he/2);
      $(".content").height($(window).height());
                   $(".content").width($(window).width());
 });
